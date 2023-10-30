@@ -1,0 +1,18 @@
+---
+import '@splidejs/splide/dist/css/splide.min.css';
+---
+
+<div id="splide" class="splide">
+  <div class="splide__track h-64">
+    <ul class="splide__list">
+      <li class="splide__slide bg-red-500">Slide 01</li>
+      <li class="splide__slide bg-blue-500">Slide 02</li>
+      <li class="splide__slide bg-green-500">Slide 03</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  import Splide from '@splidejs/splide';
+  new Splide('#splide', { type: 'loop', autoplay: true, interval: 5000, arrows: false }).mount();
+</script>

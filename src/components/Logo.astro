@@ -1,7 +1,20 @@
 ---
 import { SITE } from '~/utils/config';
+import Image from './common/Image.astro';
 ---
 
-<span class="self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white">
-  🚀 {SITE?.name}
-</span>
+<div
+  class="flex items-center gap-2 self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white"
+>
+  <Image
+    class="mx-auto rounded-md w-full"
+    widths={[32, 80, 160, 320]}
+    sizes="(max-width: 767px) 40px, (max-width: 1023px) 80px, (max-width: 2039px) 160px, 320px"
+    loading="eager"
+    width={32}
+    height={32}
+    src={'~/assets/images/logo.png'}
+    alt="logo"
+  />
+  {SITE?.name}
+</div>

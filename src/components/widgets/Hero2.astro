@@ -65,7 +65,7 @@ const {
         </div>
         {content && <Fragment set:html={content} />}
       </div>
-      <div class="basis-1/2">
+      <div class="basis-1/2 px-12">
         {
           image && (
             <div class="relative m-auto max-w-5xl">
@@ -77,8 +77,8 @@ const {
                   widths={[400, 768, 1024, 2040]}
                   sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
                   loading="eager"
-                  width={600}
-                  height={600}
+                  width={1024}
+                  height={1100}
                   {...image}
                 />
               )}
