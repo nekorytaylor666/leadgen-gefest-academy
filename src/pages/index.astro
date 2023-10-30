@@ -9,6 +9,7 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Hero2 from '~/components/widgets/Hero2.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
+import Features2 from '~/components/widgets/Features2.astro';
 const metadata = {
   title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
   ignoreTitleTemplate: true,
@@ -46,7 +47,7 @@ const metadata = {
 
   <!-- Features Widget *************** -->
 
-  <Features
+  <Features2
     id="features"
     tagline="Это для меня?"
     title="Этот курс для тебя, если ты"
@@ -73,7 +74,7 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-green-50 dark:bg-transparent"></div>
     </Fragment>
-  </Features>
+  </Features2>
 
   <Steps
     title="Карта обучения."
