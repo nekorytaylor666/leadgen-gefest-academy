@@ -11,24 +11,24 @@ metadata:
   title:
     default: Gefest
     template: '%s — Gefest'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+  description: "\U0001F680 Gefest - лучший курс по Фуллстек разработке от профессионалов."
   robots:
     index: true
     follow: true
-  openGraph:
-    site_name: Gefest
-    images:
-      - url: '~/assets/images/default.png'
-        width: 1200
-        height: 628
-    type: website
+  # openGraph:
+  #   site_name: Gefest
+  #   images:
+  #     - url: '~/assets/images/default.png'
+  #       width: 1200
+  #       height: 628
+  #   type: website
   twitter:
     handle: '@onwidget'
     site: '@onwidget'
     cardType: summary_large_image
 
 i18n:
-  language: en
+  language: ru
   textDirection: ltr
 
 apps:
