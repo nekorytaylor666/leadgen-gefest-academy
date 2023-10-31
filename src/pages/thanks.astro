@@ -1,0 +1,22 @@
+---
+import PageLayout from '~/layouts/PageLayout.astro';
+import { getHomePermalink } from '~/utils/permalinks';
+
+const title = `Спасибо!`;
+---
+
+<PageLayout metadata={{ title }}>
+  <section class="flex items-center h-full p-16">
+    <div class="container flex flex-col items-center justify-center px-5 mx-auto my-8">
+      <div class="text-center flex justify-center flex-col">
+        <h2 class="mb-8 font-bold text-6xl lg:text-9xl">
+          <span class="sr-only">Спасибо!</span>
+          <span class="text-primary">Спасибо!</span>
+        </h2>
+        <p class="text-xl font-semibold md:text-3xl">С вами скоро свяжутся :)</p>
+
+        <a rel="noopener noreferrer" href={getHomePermalink()} class="btn ml-4 mt-4">Вернуться на главную</a>
+      </div>
+    </div>
+  </section>
+</PageLayout>
