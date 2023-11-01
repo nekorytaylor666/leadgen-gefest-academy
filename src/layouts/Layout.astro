@@ -49,11 +49,11 @@ const { language, textDirection } = I18N;
     // eslint-disable-next-line no-undef
     fbq('track', 'PageView');
     </script>
-    <script type="text/partytown">
-    !(function (t, e) {
-      var o, n, p, r;
-      e.__SV ||
-        ((window.posthog = e),
+    <script>
+      !(function (t, e) {
+        var o, n, p, r;
+        e.__SV ||
+          ((window.posthog = e),
           (e._i = []),
           (e.init = function (i, s, a) {
             function g(t, e) {
@@ -70,19 +70,19 @@ const { language, textDirection } = I18N;
             var u = e;
             for (
               void 0 !== a ? (u = e[a] = []) : (a = 'posthog'),
-              u.people = u.people || [],
-              u.toString = function (t) {
-                var e = 'posthog';
-                return 'posthog' !== a && (e += '.' + a), t || (e += ' (stub)'), e;
-              },
-              u.people.toString = function () {
-                return u.toString(1) + '.people (stub)';
-              },
-              o =
-              'capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys'.split(
-                ' '
-              ),
-              n = 0;
+                u.people = u.people || [],
+                u.toString = function (t) {
+                  var e = 'posthog';
+                  return 'posthog' !== a && (e += '.' + a), t || (e += ' (stub)'), e;
+                },
+                u.people.toString = function () {
+                  return u.toString(1) + '.people (stub)';
+                },
+                o =
+                  'capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys'.split(
+                    ' '
+                  ),
+                n = 0;
               n < o.length;
               n++
             )
@@ -90,9 +90,9 @@ const { language, textDirection } = I18N;
             e._i.push([i, s, a]);
           }),
           (e.__SV = 1));
-    })(document, window.posthog || []);
-    // eslint-disable-next-line no-undef
-    posthog.init('phc_UMIqw7x5zv2F1933YuPv3C8BAiDhFqnAIdGfT6scNlT', { api_host: 'https://app.posthog.com' });
+      })(document, window.posthog || []);
+      // eslint-disable-next-line no-undef
+      posthog.init('phc_UMIqw7x5zv2F1933YuPv3C8BAiDhFqnAIdGfT6scNlT', { api_host: 'https://app.posthog.com' });
     </script>
     <noscript
       ><img
