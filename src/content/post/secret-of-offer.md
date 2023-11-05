@@ -12,11 +12,11 @@ metadata:
   canonical: https://astrowind.vercel.app/astrowind-template-in-depth
 ---
 
-<iframe className="aspect-video w-full rounded-md bg-slate-300 " src="https://drive.google.com/file/d/1VYkh3Flf1nQdN2-wm8AGFrojlMj65DFy/preview" allow="autoplay"></iframe>
+<iframe className="lg:aspect-video md:aspect-square aspect-[9/16] w-full rounded-md bg-slate-300 " src="https://drive.google.com/file/d/1VYkh3Flf1nQdN2-wm8AGFrojlMj65DFy/preview" allow="autoplay"></iframe>
 
 ## Формула ценности услуги 👇
 
-![Формула ценности услуги](/assets/images/offer-formula.png)
+![Формула ценности услуги](~/assets/images/offer-formula.png)
 
 Хорошо, давайте представим эту формулу ценности на примере айтишника, который заказывает пиццу (ведь айтишники тоже любят пиццу!).
 
