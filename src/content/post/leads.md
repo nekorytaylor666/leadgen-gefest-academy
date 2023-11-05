@@ -12,4 +12,4 @@ metadata:
   canonical: https://astrowind.vercel.app/astrowind-template-in-depth
 ---
 
-<iframe className="lg:aspect-video md:aspect-square aspect-[9/16] w-full rounded-md bg-slate-300 " src="https://drive.google.com/file/d/1kIkEHt2DXyQs_mX7czZ4KZgTaM-5LhfX/preview" allow="autoplay"></iframe>
+<iframe className="lg:aspect-video md:aspect-square aspect-[9/16] w-full rounded-md bg-slate-300 " src="https://www.youtube.com/embed/tFRyE8rYRvY?si=6ACCklCcdwdF-ZGY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
