@@ -2,7 +2,7 @@
 publishDate: 2023-10-17T00:00:00Z
 title: Зарплаты по специальностям
 excerpt: В данной таблице отображена информация о средних заработных платах в тенге по различным IT-специальностям.
-image: /src/assets/images/salaries.png
+image: /assets/images/salaries.png
 category: Course
 tags:
   - money

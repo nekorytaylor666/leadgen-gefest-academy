@@ -2,7 +2,7 @@
 publishDate: 2023-10-17T00:00:00Z
 title: На каком устройстве лучше заниматься программированием?
 excerpt: Подбираем лучшее устройство для АйТи!
-image: /src/assets/images/laptop-choose.png
+image: /assets/images/laptop-choose.png
 category: Course
 tags:
   - resources
