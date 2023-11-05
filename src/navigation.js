@@ -115,13 +115,13 @@ export const headerData = {
     //   href: '#',
     // },
   ],
-  actions: [
-    {
-      text: 'Начать учиться',
-      href: '#tally-open=nP9Z8V&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave&tally-auto-close=0',
-      target: '_blank',
-    },
-  ],
+  // actions: [
+  //   // {
+  //   //   text: 'Начать учиться',
+  //   //   href: '#tally-open=nP9Z8V&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave&tally-auto-close=0',
+  //   //   target: '_blank',
+  //   // },
+  // ],
 };
 
 export const footerData = {
@@ -176,9 +176,7 @@ export const footerData = {
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
   socialLinks: [
-    { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: '#' },
+    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/tokha.it/' },
   ],
   footNote: `
   

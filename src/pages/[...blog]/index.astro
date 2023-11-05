@@ -11,7 +11,7 @@ import { findImage } from '~/utils/images';
 
 export const prerender = true;
 
-export async function getStaticPaths () {
+export async function getStaticPaths() {
   return await getStaticPathsBlogPost();
 }
 
@@ -37,7 +37,18 @@ const metadata = merge(
 );
 ---
 
-<Layout metadata={metadata}>
+<Layout
+  metadata={metadata}
+  actions={[
+    {
+      variant: 'secondary',
+      text: 'Записаться на вебинар',
+      href: 'https://start.bizon365.ru/room/161173/647829?mcp_token=eyJwaWQiOjgxOTUzMCwic2lkIjoxMTY5NTczMTMwLCJheCI6IjBmMjk1YzE1YWQyZmY4ZmNjMDVkNjAxNDM5NDkwYWE2IiwidHMiOjE2OTkyMDA5MzQsImV4cCI6MTcwMTYyMDEzNH0.hFrIDTbJClwevU4rYTxIN-gyF3EE7qvrDHAbau410As',
+      target: '_blank',
+      icon: 'tabler:check',
+    },
+  ]}
+>
   <SinglePost post={{ ...post, image: image }} url={url} />
   <ToBlogLink />
 </Layout>

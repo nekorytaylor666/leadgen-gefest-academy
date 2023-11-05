@@ -6,13 +6,14 @@ import Announcement from '~/components/widgets/Announcement.astro';
 
 import { headerData, footerData } from '~/navigation';
 
-import type { MetaData } from '~/types';
+import type { CallToAction, MetaData } from '~/types';
 
 export interface Props {
   metadata?: MetaData;
+  actions?: Array<CallToAction>;
 }
 
-const { metadata } = Astro.props;
+const { metadata, actions } = Astro.props;
 ---
 
 <Layout metadata={metadata}>
@@ -20,7 +21,7 @@ const { metadata } = Astro.props;
     <Announcement />
   </slot>
   <slot name="header">
-    <Header {...headerData} />
+    <Header links={headerData.links} actions={headerData.actions ?? actions} />
   </slot>
   <main>
     <slot />

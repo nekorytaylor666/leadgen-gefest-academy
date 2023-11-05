@@ -16,7 +16,18 @@ const metadata = {
 };
 ---
 
-<Layout metadata={metadata}>
+<Layout
+  metadata={metadata}
+  actions={[
+    {
+      variant: 'secondary',
+      text: 'Подать заявку',
+      href: '#tally-open=nP9Z8V&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave&tally-auto-close=0',
+      target: '_blank',
+      icon: 'tabler:check',
+    },
+  ]}
+>
   <!-- Hero Widget ******************* -->
 
   <Hero2
