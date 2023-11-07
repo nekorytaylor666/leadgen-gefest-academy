@@ -180,6 +180,6 @@ export const footerData = {
   ],
   footNote: `
   
-    Made by <a class="text-blue-600 hover:underline dark:text-gray-200" href="https://gefest.dev/"> Gefest</a> · All rights reserved.
+    Made by <a class="text-blue-600 hover:underline dark:text-gray-200" href="https://home.gefest.agency/"> Gefest</a> · All rights reserved.
   `,
 };

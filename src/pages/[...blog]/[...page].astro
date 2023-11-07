@@ -2,7 +2,10 @@
 import Layout from '~/layouts/PageLayout.astro';
 import BlogList from '~/components/blog/List.astro';
 import Headline from '~/components/blog/Headline.astro';
-import Pagination from '~/components/blog/Pagination.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from '~/components/widgets/Content.astro';
+import Hero from '~/components/widgets/Hero.astro';
 // import PostTags from "~/components/blog/Tags.astro";
 
 import { blogListRobots, getStaticPathsBlogList } from '~/utils/blog';
@@ -36,22 +39,119 @@ const metadata = {
   actions={[
     {
       variant: 'secondary',
-      text: 'Записаться на вебинар',
-      href: 'https://start.bizon365.ru/room/161173/647829?mcp_token=eyJwaWQiOjgxOTUzMCwic2lkIjoxMTY5NTczMTMwLCJheCI6IjBmMjk1YzE1YWQyZmY4ZmNjMDVkNjAxNDM5NDkwYWE2IiwidHMiOjE2OTkyMDA5MzQsImV4cCI6MTcwMTYyMDEzNH0.hFrIDTbJClwevU4rYTxIN-gyF3EE7qvrDHAbau410As',
+      text: 'Перейти к обучению',
+      href: 'https://t.me/gefest_assistant_bot',
       target: '_blank',
       icon: 'tabler:check',
     },
   ]}
 >
-  <section class="px-6 sm:px-6 py-12 sm:py-16 lg:py-20 mx-auto max-w-4xl">
-    <Headline subtitle="Тот самый мини-курс, который станет стартов твоей взрывной АйТи Карьеры! ">
-      Тот самый Мини-Курс 🚀
-    </Headline>
-    <BlogList posts={page.data} />
-    <Pagination prevUrl={page.url.prev} nextUrl={page.url.next} />
-    <!--
-      <PostTags tags={allCategories} class="mb-2" title="Search by Categories:" isCategory />
-      <PostTags tags={allTags}  title="Search by Tags:" />
-    -->
-  </section>
+  <Hero
+    tagline="Тот самый Курс 🚀"
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Перейти к обучению',
+        href: 'https://t.me/gefest_assistant_bot',
+        target: '_blank',
+        icon: 'tabler:check',
+      },
+      { text: 'Узнать больше', href: '#map' },
+    ]}
+  >
+    <Fragment slot="title">
+      Как зарабатывать <span class="text-primary"> 500.000</span> ежемесячно на <span class="text-primary">АйТИ</span> с
+      нуля!
+    </Fragment>
+  </Hero>
+  <!-- <Headline subtitle=" Тот самый Курс 🚀">Как зарабатывать 500.000 ежемесячно на АйТИ с нуля!</Headline> -->
+  <!-- <BlogList posts={page.data} /> -->
+  <Steps
+    id="map"
+    title="Что входит в курс 🤔"
+    items={[
+      {
+        title: 'Блок 1: <span class="font-medium">Полезные ресурсы</span>',
+        description:
+          'Как и где находить необходимую инфу? Держи 😇 крутые сайты, где можно найти передовые новости про АйТи чтобы быть в тренде!',
+        emoji: '📚',
+      },
+      {
+        title: 'Блок 2: <span class="font-medium">На каком устройстве лучше заниматься программированием?</span>',
+        description: 'Подбираем лучшее устройство для АйТи!',
+        emoji: '💻',
+      },
+      {
+        title: 'Блок 3: <span class="font-medium">Как в IT делаются деньги?</span>',
+        description: 'Научись различать бекенд от фронтенда, и джуна от сеньора.',
+        emoji: '🤯',
+      },
+      {
+        title: 'Блок 4: <span class="font-medium">Где находить работу?</span>',
+        description: 'Научись находить клиентов через 3 канала продвижения.',
+        emoji: '🙋‍♂️',
+      },
+      {
+        title: 'Блок 5: <span class="font-medium">Зарплаты по специальностям</span>',
+        description: 'Узнайте сколько зарабатывают специалисты разных направлений в IT.',
+        emoji: '💰',
+      },
+      {
+        title: 'Блок 6: <span class="font-medium">Секрет продаж в IT</span>',
+        description: 'Откройте для себя секретный ингредиент, который заставит клиентов жаждать ваших услуг.',
+        emoji: '🤫',
+      },
+    ]}
+  />
+  <Content
+    isReversed
+    tagline="Преподаватель"
+    title="Перенимай опыт у реальных специалистов!"
+    items={[
+      {
+        title: '5 лет веб-разработки',
+      },
+      {
+        title: 'Работал в Chocofamily, Bloomberg, Streamflow',
+      },
+      {
+        title: 'Призер международных олимпиад по Финтех',
+      },
+
+      {
+        title: 'Основатель аутсорс компании Gefest (50М в обороте)',
+      },
+      {
+        title: 'Учиться и живет в Гонконге',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/toktar.jpg',
+      alt: 'Colorful Image',
+    }}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-green-50 dark:bg-transparent"></div>
+    </Fragment>
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Ахметов Тохтар</h3>
+       Фаундер Gefest / Senior Fullstack Developer
+    </Fragment>
+  </Content>
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Перейти к обучению',
+        href: 'https://t.me/gefest_assistant_bot',
+        target: '_blank',
+        icon: 'tabler:check',
+      },
+    ]}
+  >
+    <Fragment slot="title">Готов зарабатывать в АйТи? 🤑</Fragment>
+
+    <Fragment slot="subtitle">Стартуй обучение!</Fragment>
+  </CallToAction>
+  <!-- <Pagination prevUrl={page.url.prev} nextUrl={page.url.next} /> -->
 </Layout>
