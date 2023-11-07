@@ -44,11 +44,18 @@ const { language, textDirection } = I18N;
         s = b.getElementsByTagName(e)[0];
         s.parentNode.insertBefore(t, s);
       })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-      // eslint-disable-next-line no-undef
       fbq('init', '1003756177581394');
-      // eslint-disable-next-line no-undef
       fbq('track', 'PageView');
     </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display:none"
+        src="https://www.facebook.com/tr?id=1003756177581394&ev=PageView&noscript=1"
+      /></noscript
+    >
+
     <script>
       !(function (t, e) {
         var o, n, p, r;
@@ -91,17 +98,8 @@ const { language, textDirection } = I18N;
           }),
           (e.__SV = 1));
       })(document, window.posthog || []);
-      // eslint-disable-next-line no-undef
-      posthog.init('phc_UMIqw7x5zv2F1933YuPv3C8BAiDhFqnAIdGfT6scNlT', { api_host: 'https://app.posthog.com' });
+      posthog.init('phc_LdS6u84QCtg1W6SoRBovdPPbiIWOrx9dgisAdCwkhLd', { api_host: 'https://app.posthog.com' });
     </script>
-    <noscript
-      ><img
-        height="1"
-        width="1"
-        style="display:none"
-        src="https://www.facebook.com/tr?id=1003756177581394&ev=PageView&noscript=1"
-      /></noscript
-    >
 
     <CommonMeta />
     <Favicons />
